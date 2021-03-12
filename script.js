@@ -38,4 +38,9 @@ function changecolor(clicked_id){
 	}	
 	
 
+
+}
+function book_ticket(){
+	var url = "purchase.html?total_price=" + encodeURIComponent(total_pay);
+        window.location.href = url;
 }
