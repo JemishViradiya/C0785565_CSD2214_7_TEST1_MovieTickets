@@ -7,9 +7,9 @@
     <body>
         <label for="movie">Choose a Movie</label>
         <select id="movie" class="menu">
-        <option value="Titanic">Titanic</option>
-        <option value="Evengers: End Game">Evengers: End Game</option>
-        <option value="infinitive War">infinitive War</option>
+        <option value="Titanic">Titanic ($13)</option>
+        <option value="Evengers: End Game">Evengers: End Game ($15) </option>
+        <option value="infinitive War">infinitive War ($20)</option>
         </select>
 
         <div class="select_seat">
@@ -92,12 +92,30 @@
             </table>
         </div>
         <div class="booking_ticket">
-            Movie Selected : <text id="selected_movie"></text><br>
-            Ticket Price : $<text id="ticket price"></text><br>
-            Number of Seats selected: <text id="no_seat"></text><br>
-            Total price: $<text id="total_price"></text>
+            Movie Selected : <text id="selected_movie" class="selected_movie">Titanic</text><br>
+            Ticket Price : $<text id="ticket_price" class="total_price">13</text><br>
+            Number of Seats selected: <text id="no_seat" class="no_seat"></text><br>
+            Total price: $<text id="total_price" class="total_price"></text>
             <br>
             <input type="submit" name="book_ticket" onclick="book_ticket()" value="Buy Seats" class="booking">
         </div>
     </body>
+<script>
+    $(".menu").change(function(){
+        value = document.getElementById("movie").value;
+        $(".selected_movie").text(value);
+        if(value=="Titanic")
+        {
+            $('#ticket_price').text("13");
+        }
+        else if(value=="Evengers: End Game")
+        {
+            $('#ticket_price').text("15");
+        }
+        else
+        {
+            $('#ticket_price').text("20");
+        }
+    })
+</script>
 </html>
