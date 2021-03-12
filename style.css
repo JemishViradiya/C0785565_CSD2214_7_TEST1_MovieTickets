@@ -13,3 +13,27 @@ select{
 	    height: 25px;
     border-radius: 6px;
 }
+.info{
+	margin-top: 15px;
+    margin-left: 15px;
+}
+.green{
+	background-color: green
+
+}
+.red{
+	background-color: red
+}
+.booking_ticket
+{
+	margin-top: 15px;
+    margin-left: 15px;
+}
+.booking{
+	 margin-top: 10px;
+    height: 29px;
+    background-color: #2F12A6;
+    color: white;
+    border: none;
+    border-radius: 7px;
+}

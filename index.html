@@ -76,12 +76,12 @@
             </table>
         </div>
 
-        <div>
-            <table>
+        <div class="info">
+            <table cellpadding="5">
                 <tr>
                     <td><input type="button" name="N/A"></td>
-                    <td><input type="button" name="selected"></td>
-                    <td><input type="button" name="Occupied"></td>
+                    <td><input type="button" name="selected" class="green"></td>
+                    <td><input type="button" name="Occupied" class="red"></td>
                 </tr>
                 <tr>
                     <td>N/A</td>
@@ -89,6 +89,14 @@
                     <td>Occupied</td>
                 </tr>
             </table>
+        </div>
+        <div>
+            Movie Selected : <text id="selected_movie"></text><br>
+            Ticket Price : $<text id="ticket price"></text><br>
+            Number of Seats selected: <text id="no_seat"></text><br>
+            Total price: $<text id="total_price"></text>
+            <br>
+            <input type="submit" name="book_ticket" onclick="book_ticket()" value="Buy Seats" class="booking">
         </div>
     </body>
 </html>
