@@ -37,6 +37,7 @@ select{
     border: none;
     border-radius: 7px;
 }
+/* Purchase page css*/
 form tr td input[type="text"]{
 	width: 400px !important;
     height: 30px;
@@ -53,6 +54,8 @@ form tr td input[type="Number"]{
     cursor: default;
     border: 1px solid black;
 }
+
+/* confirm button */
 .final_submit{
 	width: 100px !important;
     height: 30px;
