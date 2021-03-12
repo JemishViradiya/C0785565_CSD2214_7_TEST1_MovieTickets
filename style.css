@@ -1,0 +1,15 @@
+.select_seat{
+	margin-top: 25px;
+	margin-left: 10px;
+}
+table tr td input{
+	width: 25px !important;
+    height: 25px;
+    background-color: #95A5A6;
+    border: none;
+    cursor: pointer;
+}
+select{
+	    height: 25px;
+    border-radius: 6px;
+}

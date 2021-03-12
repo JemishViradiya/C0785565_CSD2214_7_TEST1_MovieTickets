@@ -1,17 +1,18 @@
 <html>
     <head>
         <title>Ticket Booking Center</title>
+        <link rel="stylesheet" href="style.css">   
     </head>
     <body>
         <label for="movie">Choose a Movie</label>
-        <select id="movie">
+        <select id="movie" class="menu">
         <option value="Titanic">Titanic</option>
         <option value="Evengers: End Game">Evengers: End Game</option>
         <option value="infinitive War">infinitive War</option>
         </select>
 
-        <div>
-            <table colspan="3">
+        <div class="select_seat">
+            <table cellpadding="5">
                 <tr id="raw1">
                    <td><input type="button" id="raw1_1"></td>
                    <td><input type="button" id="raw1_2"></td>
@@ -71,6 +72,21 @@
                    <td><input type="button" id="raw5_8"></td>
                    <td><input type="button" id="raw5_9"></td>
                    <td><input type="button" id="raw5_10"></td>
+                </tr>
+            </table>
+        </div>
+
+        <div>
+            <table>
+                <tr>
+                    <td><input type="button" name="N/A"></td>
+                    <td><input type="button" name="selected"></td>
+                    <td><input type="button" name="Occupied"></td>
+                </tr>
+                <tr>
+                    <td>N/A</td>
+                    <td>Selected</td>
+                    <td>Occupied</td>
                 </tr>
             </table>
         </div>
