@@ -1,6 +1,8 @@
 counter = 0
 document.getElementById("no_seat").innerHTML=0
+var total_pay = 0
 function changecolor(clicked_id){
+	debugger;
 	var color = window.getComputedStyle(document.getElementById(clicked_id)).getPropertyValue("background-color")
 
 	//get current color of the selected button
@@ -9,19 +11,31 @@ function changecolor(clicked_id){
 		//set green color
 			document.getElementById(clicked_id).style.backgroundColor ="green";
 			counter=counter+1;
-			document.getElementById("no_seat").innerHTML=counter
+			document.getElementById("no_seat").innerText=counter
 	}
 	else if(color == "rgb(0, 128, 0)")
 	{
 		// set normal color
 		document.getElementById(clicked_id).style.backgroundColor ="rgb(149, 165, 166)";
 		counter=counter-1;
-		document.getElementById("no_seat").innerHTML=counter;
+		document.getElementById("no_seat").innerText=counter;
 	}
-	alert(document.getElementById("no_seat").value)
-	var get_seat = parseInt(document.getElementById("no_seat").value);
-	var ticket_price = parseInt(document.getElementById("ticket_price").value);
-	var total_price = get_seat * ticket_price
-	document.getElementById(total_price).innerHTML=total_price
+	var movie = document.getElementById("movie").value;
+	if(movie=="Titanic")
+	{
+		total_pay = 13 * counter
+		document.getElementById("total_price").innerHTML = total_pay
+	}	
+	else if(movie=="Evengers: End Game")
+	{
+		total_pay = 15 * counter
+		document.getElementById("total_price").innerHTML = total_pay
+	}	
+	if(movie=="infinitive War")
+	{
+		total_pay = 20 * counter
+		document.getElementById("total_price").innerHTML = total_pay
+	}	
+	
 
 }

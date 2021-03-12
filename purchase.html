@@ -6,6 +6,8 @@
         <script src="vendor/jquery-validation/dist/jquery.validate.min.js"></script>
     </head>
     <body>
+        <h2>Confirm Purchase</h2>
+        <h4> Total amount to pay : <text id="t_pay"></text> </h4>
         <div>
             <form method="post" name="registration">
                 <table class="form">
@@ -16,7 +18,7 @@
                     </tr>
                     <tr>
                         <td>
-                            <input type="text" name="fname" placeholder="Enter your first name">
+                            <input type="text" name="fname" id="fname" placeholder="Enter your first name">
                         </td>
                     </tr>
                     <tr>
@@ -26,7 +28,7 @@
                     </tr>
                     <tr>
                         <td>
-                            <input type="text" name="lname" placeholder="Enter your last name" required>
+                            <input type="text" name="lname" id="lname" placeholder="Enter your last name" required>
                         </td>
                     </tr>
                     <tr>
@@ -36,7 +38,7 @@
                     </tr>
                     <tr>
                         <td>
-                            <input type="text" name="email" placeholder="Enter  Email id">
+                            <input type="text" name="email" id="email" placeholder="Enter  Email id">
                         </td>
                     </tr>
                     <tr>
@@ -46,7 +48,7 @@
                     </tr>
                     <tr>
                         <td>
-                            <input type="text" name="cardnumber" placeholder="Enter Card Number">
+                            <input type="text" name="cardnumber" id="cardnumber" placeholder="Enter Card Number">
                         </td>
                     </tr>
                     <tr>
@@ -56,7 +58,7 @@
                     </tr>
                     <tr>
                         <td>
-                            <input type="text" name="cvv" placeholder="777">
+                            <input type="text" name="cvv" id="cvv" placeholder="777">
                         </td>
                     </tr>
                     <tr>
