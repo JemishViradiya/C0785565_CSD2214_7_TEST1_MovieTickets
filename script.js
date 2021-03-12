@@ -40,7 +40,14 @@ function changecolor(clicked_id){
 
 
 }
+//click on book ticket button 
 function book_ticket(){
 	var url = "purchase.html?total_price=" + encodeURIComponent(total_pay);
         window.location.href = url;
+}
+
+//click on confirm button for pay
+function Confirm(){
+	document.getElementsByTagName("h1").innerText="You have succsefully bookd the ticket"
+	
 }
