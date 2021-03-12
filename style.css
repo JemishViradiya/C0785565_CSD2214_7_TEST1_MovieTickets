@@ -37,3 +37,19 @@ select{
     border: none;
     border-radius: 7px;
 }
+form tr td input[type="text"]{
+	width: 400px !important;
+    height: 30px;
+    border-radius: 5px;
+    background-color: white;
+    cursor: default;
+    border: 1px solid black;
+}
+form tr td input[type="Number"]{
+	width:40px !important ;
+	height: 30px;
+    border-radius: 5px;
+    background-color: white;
+    cursor: default;
+    border: 1px solid black;
+}
